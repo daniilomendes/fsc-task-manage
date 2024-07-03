@@ -4,9 +4,9 @@ import TasksIcon from "../assets/icons/tasks.svg?react";
 
 const Sidebar = () => {
   return (
-    <div className="h-screen w-64 bg-white ">
-      <div className="px-8 py-6 space-y-4">
-        <h1 className="text-[#00ADB5] text-xl font-semibold">Suas Tarefas</h1>
+    <div className="h-screen w-72 bg-white">
+      <div className="space-y-4 px-8 py-6">
+        <h1 className="text-xl font-semibold text-[#00ADB5]">Suas Tarefas</h1>
 
         <p>
           Um simples{" "}
@@ -14,7 +14,7 @@ const Sidebar = () => {
         </p>
       </div>
 
-      <div className="flex flex-col p-2 gap-2">
+      <div className="flex flex-col gap-2 p-2">
         <SidebarButton variant="unselected">
           <HomeIcon /> Ínicio
         </SidebarButton>
