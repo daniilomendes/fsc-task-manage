@@ -6,6 +6,7 @@ import {
   SunIcon,
   TrashIcon,
 } from "../assets/icons";
+import TasksSeparator from "./TasksSeparator";
 
 const Tasks = () => {
   return (
@@ -28,6 +29,20 @@ const Tasks = () => {
             <AddIcon />
             Nova Tarefa
           </Button>
+        </div>
+      </div>
+
+      <div className="rounded-lg bg-white p-6">
+        <div className="space-y-3">
+          <TasksSeparator icon={<SunIcon />} text="Manhã" />
+        </div>
+
+        <div className="my-6 space-y-3">
+          <TasksSeparator icon={<CloudSunIcon />} text="Tarde" />
+        </div>
+
+        <div className="space-y-3">
+          <TasksSeparator icon={<MoonIcon />} text="Noite" />
         </div>
       </div>
     </div>
