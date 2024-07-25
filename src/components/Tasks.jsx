@@ -92,7 +92,7 @@ const Tasks = () => {
 
       <div className="rounded-lg bg-white p-6">
         <div className="space-y-3">
-          <TasksSeparator icon={<SunIcon />} text="Manhã" />
+          <TasksSeparator icon={<SunIcon />} title="Manhã" />
 
           {morningTasks.map((task) => (
             <TaskItem
@@ -105,7 +105,7 @@ const Tasks = () => {
         </div>
 
         <div className="my-6 space-y-3">
-          <TasksSeparator icon={<CloudSunIcon />} text="Tarde" />
+          <TasksSeparator icon={<CloudSunIcon />} title="Tarde" />
 
           {afternoonTasks.map((task) => (
             <TaskItem
@@ -118,7 +118,7 @@ const Tasks = () => {
         </div>
 
         <div className="space-y-3">
-          <TasksSeparator icon={<MoonIcon />} text="Noite" />
+          <TasksSeparator icon={<MoonIcon />} title="Noite" />
 
           {eveningTasks.map((task) => (
             <TaskItem
